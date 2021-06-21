@@ -1,0 +1,80 @@
+@import "global";
+@import "libs";
+
+.hide {
+   display: none;
+}
+
+.container {
+   max-width: 1200px;
+   margin: auto;
+}
+
+.header {
+     position: relative;
+		height: 100vh;
+		min-height: 520px;
+		background-image: url(../img/mfizter.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+}
+
+.header-title{
+   font-size: 48px;
+   color: white;
+   text-align: center;
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%);
+   display: inline;
+   width: fit-content;
+}
+
+
+.buttons {
+   display: flex;
+   align-items: center;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   padding: 8px 16px;
+   background: #ffffff;
+   border: 1px solid #d9d9d9;
+   box-sizing: border-box;
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.0015);
+   border-radius: 2px;
+   color: #595959;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.button:hover {
+   background: #1890ff;
+   border: 1px solid #1890ff;
+   color: #fff;
+}
+
+
+
+.footer {
+   padding: 60px 0;
+}
+
+.footer-block {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.social-link:not(:last-child) {
+   margin-right: 21px;
+}
+
+
+
+@import "media";

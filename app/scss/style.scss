@@ -1,9 +1,6 @@
 @import "global";
 @import "libs";
 
-.hide {
-   display: none;
-}
 
 .container {
    max-width: 1200px;
@@ -14,7 +11,7 @@
      position: relative;
 		height: 100vh;
 		min-height: 520px;
-		background-image: url(../img/mfizter.jpg);
+		background-image: url(../images/mfizter.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -22,7 +19,7 @@
 
 .header-title{
    font-size: 48px;
-   color: white;
+   color: black;
    text-align: center;
    position: absolute;
    top: 60%;
@@ -32,49 +29,72 @@
    width: fit-content;
 }
 
+.title{
+   font-size: 42px;
+   text-align: center;
+   margin: 25px 0;
+}
 
-.buttons {
+.history-description{
    display: flex;
-   align-items: center;
-}
-
-.button {
-   display: flex;
-   align-items: center;
-   padding: 8px 16px;
-   background: #ffffff;
-   border: 1px solid #d9d9d9;
-   box-sizing: border-box;
-   box-shadow: 0 0 2px rgba(0, 0, 0, 0.0015);
-   border-radius: 2px;
-   color: #595959;
-   font-size: 16px;
-   line-height: 24px;
-}
-
-.button:hover {
-   background: #1890ff;
-   border: 1px solid #1890ff;
-   color: #fff;
-}
-
-
-
-.footer {
-   padding: 60px 0;
-}
-
-.footer-block {
-   display: flex;
-   align-items: center;
    justify-content: space-between;
 }
 
+.history-text{
+   line-height: 1.3;
+}
 
-.social-link:not(:last-child) {
-   margin-right: 21px;
+
+.history-img{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin-right: 40px;
 }
 
 
 
+.swiper-container {
+   width: 80%;
+   height: 400px;
+   margin: auto;
+ }
+
+ .image-slider__image{
+    //margin: auto;
+    text-align: center;
+ }
+
+ .image-slider__image img{
+    max-height: 400px;
+    //margin: auto;
+    //text-align: center;
+    //max-width: 600px;
+ }
+
+.swiper-button-prev,
+.swiper-button-next{
+   color: black;
+}
+
+.contacts-block{
+   display: flex;
+   justify-content: space-between;
+}
+
+.contacts-description{
+   line-height: 1.2;
+}
+
+.contact-adress{
+   margin-left: 45px;
+}
+
+.fas{
+   margin-right: 10px;
+}
+
+.fa-map-marker-alt{
+   color: red;
+}
 @import "media";

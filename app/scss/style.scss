@@ -7,26 +7,56 @@
    margin: auto;
 }
 
-.header {
+section{
+   padding: 25px 0;
+}
+
+.fas{
+   margin-right: 10px;
+}
+
+.header-wrapper {
      position: relative;
-		height: 100vh;
-		min-height: 520px;
+		height: 68vh;
+		min-height: 320px;
 		background-image: url(../images/mfizter.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 }
 
-.header-title{
-   font-size: 48px;
-   color: black;
-   text-align: center;
+.block{
    position: absolute;
-   top: 60%;
+   z-index: 1;
+   background-color: black;
+   height: 100%;
+   //height: inherit;
+   width: 100%;
+   opacity: 33%;  
+   //position: relative;
+   //z-index: 1000;
+}
+
+
+.header-description{
+   opacity: 100% !important;
+   color: white; 
+   position: absolute;
+   top: 50%;
    left: 50%;
    transform: translate(-50%);
+   z-index: 2;
+   text-align: center;
+}
+
+.header-title{
+   font-size: 22px;   
    display: inline;
-   width: fit-content;
+}
+
+.header-subtitle{
+   margin-top: 25px;
+   line-height: 1.2;
 }
 
 .title{
@@ -35,9 +65,29 @@
    margin: 25px 0;
 }
 
+.hospital-tasks{
+   //border: 2px solid black;
+   width: 80%;
+   //font-size: 20px;
+   padding: 15px;
+   margin: 0 auto;
+   box-shadow: 0 7px 7px -7px rgba(0, 0, 0, .6);
+   line-height: 1.3;
+   border-radius: 7px;
+   border: 1 px solid black;
+}
+
+.hospital-tasks__list{
+   padding-top: 10px;
+   padding-left: 22px;
+   display: block;
+}
+
 .history-description{
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   margin-bottom: 25px;
 }
 
 .history-text{
@@ -45,20 +95,49 @@
 }
 
 
+.history{
+   padding: 30px 0;
+}
+
 .history-img{
-   width: 200px;
+   min-width: 350px;
    height: 200px;
-   border-radius: 50%;
    margin-right: 40px;
 }
 
 
+.navbar{
+   height: 50px;
+   background-color:#fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid black;
+}
+
+.logo{
+   padding: 10px;
+}
+
+.nav-phone{
+   transform: rotate(90deg);
+   margin-right: 5px;
+}
+
+.nav-lists{
+   text-transform: uppercase;
+   display: flex;
+}
+.nav-list{
+   margin-right: 25px;
+}
 
 .swiper-container {
    width: 80%;
    height: 400px;
    margin: auto;
  }
+
 
  .image-slider__image{
     //margin: auto;
@@ -84,14 +163,15 @@
 
 .contacts-description{
    line-height: 1.2;
+   padding-left: 45px;
 }
 
-.contact-adress{
-   margin-left: 45px;
+.contact-adress__description{
+   display: inline-block;
 }
 
-.fas{
-   margin-right: 10px;
+.contacts-description > div{
+   margin-bottom: 15px;
 }
 
 .fa-map-marker-alt{

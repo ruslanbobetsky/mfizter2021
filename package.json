@@ -1,25 +1,33 @@
 {
-  "name": "gulp-start",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "animate.css": "^4.1.1",
-    "gulp": "^4.0.2",
-    "browser-sync": "^2.26.13",
-    "del": "^6.0.0",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify-es": "^2.0.0",
-    "jquery": "^3.5.1",
-    "wowjs": "^1.1.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "ruslan36801",
-  "license": "ISC"
+	"name": "fls-gulp",
+	"version": "1.0.0",
+	"description": "Сборка gulp",
+	"main": "index.html",
+	"author": "Fls",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "latest",
+		"del": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-clean-css": "latest",
+		"gulp-file-include": "latest",
+		"gulp-fonter": "latest",
+		"gulp-group-css-media-queries": "latest",
+		"gulp-sass": "latest",
+		"sass": "latest",
+		"gulp-uglify-es": "latest",
+		"gulp-webp-html": "latest",
+		"gulp-webpcss": "latest",
+		"imagemin-webp": "latest",
+		"transform-runtime": "0.0.0",
+		"webp-converter": "2.2.3",
+		"gulp-imagemin": "latest",
+		"gulp-newer": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-ttf2woff": "latest",
+		"gulp-ttf2woff2": "latest",
+		"gulp-svg-sprite": "latest"
+	}
 }

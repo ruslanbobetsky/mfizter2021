@@ -1,3 +1,14 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts";
 @import "global";
 @import "libs";
 
@@ -19,7 +30,8 @@ section{
      position: relative;
 		height: 68vh;
 		min-height: 320px;
-		background-image: url(../images/mfizter.jpg);
+      //background-image: center / cover no-repeat url(../img/mfizter.jpg);
+		background-image: url(../img/mfizter.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -59,6 +71,7 @@ section{
    line-height: 1.2;
 }
 
+
 .title{
    font-size: 42px;
    text-align: center;
@@ -86,8 +99,19 @@ section{
 .history-description{
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   margin-bottom: 25px;
+   align-items: flex-start;
+   margin-bottom: 40px;
+   
+}
+
+.history-description:nth-child(even){
+   flex-direction: row-reverse;
+   .history-img{
+      margin-right: 0;
+      margin-left: 40px;
+      height: 300px;
+      object-fit: cover;
+   }
 }
 
 .history-text{
@@ -104,7 +128,6 @@ section{
    height: 200px;
    margin-right: 40px;
 }
-
 
 .navbar{
    height: 50px;
@@ -177,4 +200,27 @@ section{
 .fa-map-marker-alt{
    color: red;
 }
+
+.therapy{
+   font-family: "FiraSans-Medium";
+}
+
+.therapy ul {
+   display: block;
+   
+   margin-left: 0;
+   margin-right: 0;
+   padding-left: 40px;
+   line-height: 1.4;
+} 
+
+.therapy > ul{
+   margin-bottom: .4em;
+   margin-top: .7em;
+}
+
+.therapy-__first{
+   text-decoration: underline;
+}
+
 @import "media";

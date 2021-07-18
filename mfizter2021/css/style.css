@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "FiraSans";
   font-display: swap;
@@ -4565,13 +4567,13 @@ section {
   margin-right: 10px;
 }
 
-._no-webp .header-wrapper {
+._no-webp .header-wrapper{
   background-image: url(../img/mfizter.jpg); }
 
 .header-wrapper {
   position: relative;
   height: 68vh;
-  min-height: 320px;
+  min-height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4580,14 +4582,13 @@ section {
 .block {
   position: absolute;
   z-index: 1;
-  background-color: black;
+  background-color: #333;
   height: 100%;
   width: 100%;
-  opacity: 33%;
+  opacity: 40%;
 }
 
 .header-description {
-  opacity: 100% !important;
   color: white;
   position: absolute;
   top: 50%;
@@ -4672,6 +4673,12 @@ section {
   min-width: 350px;
   height: 200px;
   margin-right: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.history p {
+  margin-bottom: 10px;
 }
 
 .navbar {
@@ -4777,37 +4784,126 @@ section {
   text-decoration: underline;
 }
 
+.wrapper {
+  padding: 30px;
+  min-height: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+/* ------------------ */
+
+.title-swiper {
+  font-family: "FiraSans-Medium";
+  font-size: 30px;
+  color: #fff;
+  margin: 0px 0px 30px 7px;
+}
+
+/* ------------------ */
+
+/* Флекс */
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block__side {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  background-color: #77608d;
+}
+
+.block__body {
+  padding: 0px 0px 0px 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* ------------------ */
+
+.image-slider {
+  padding: 30px 0 70px 0;
+}
+
+.image-slider__image {
+  text-align: center;
+}
+
+.image-slider__image img {
+  max-width: 100%;
+}
+
+/* Стрелки */
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+  color: #fff;
+  font-size: 60px;
+}
+
+/* Пагинация */
+
+.image-slider .swiper-pagination {
+  bottom: 30px;
+}
+
+/* Буллеты */
+
+.image-slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+/* Фракция */
+
+.image-slider .swiper-pagination-fraction {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Прогрессбар */
+
+.image-slider .swiper-pagination-progressbar-fill {
+  background-color: #7a956b;
+}
+
+/* Скролл */
+
+.image-slider .swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: #7a956b;
+}
+
+/* Автоширина */
+
+.image-slider .swiper-slide {
+  /* width: auto; */
+}
+
+.footer {
+  min-height: 80px;
+  background-color: #333333;
+  padding: 30px 0 0 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-copyright {
+  display: inline-block;
+  margin-right: 4px;
+}
+
 @media (max-width: 1366px) {
   .container {
     max-width: 960px;
-  }
-
-  .pizza {
-    background-position: center right -300px;
-    background-size: 750px;
-  }
-
-  .kebab {
-    background-position: top -5px right -93px;
-    background-size: 530px;
-  }
-
-  .vegetables {
-    background-position: top 0 right -93px;
-    background-size: 820px;
-  }
-
-  .sushi {
-    background-position: center right -90px;
-  }
-
-  .rating {
-    margin-right: 15px;
-  }
-
-  .category,
-  .price {
-    font-size: 14px;
   }
 }
 
@@ -4815,260 +4911,17 @@ section {
   .container {
     max-width: 750px;
   }
-
-  .pizza {
-    padding: 50px;
-    background-size: 500px;
-    background-position: center right -200px;
-  }
-
-  .kebab {
-    background-position: top 55px right -100px;
-    background-size: 385px;
-  }
-
-  .vegetables {
-    background-position: top 0 right -280px;
-    background-size: 810px;
-  }
-
-  .sushi {
-    background-position: top 30px right -175px;
-  }
-
-  .promo-text {
-    font-size: 18px;
-    max-width: 400px;
-  }
-
-  .card {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
-  }
-
-  .footer-link {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 560px;
   }
-
-  .card-info {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .card .rating {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-
-  .card-title {
-    font-size: 18px;
-  }
-
-  .card-text {
-    min-height: 290px;
-  }
-
-  .card-price-bold {
-    margin-left: 20px;
-  }
-
-  .pizza {
-    background-size: 400px;
-    background-position: bottom 50px right -200px;
-  }
-
-  .kebab {
-    background-position: top -5px right -74px;
-    background-size: 300px;
-  }
-
-  .vegetables {
-    background-position: top 0 right -240px;
-    background-size: 702px;
-  }
-
-  .sushi {
-    background-position: top -24px right -75px;
-    background-size: 302px;
-  }
-
-  .promo-title {
-    font-size: 24px;
-    line-height: 1.4;
-  }
-
-  .promo-text {
-    margin-top: 0;
-  }
 }
 
 @media (max-width: 578px) {
   .container {
     width: 90%;
-  }
-
-  .address {
-    min-width: 100%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-
-  .header {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .input-address {
-    margin-top: 15px;
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-
-  .promo {
-    background-image: none;
-  }
-
-  .promo-title {
-    margin-bottom: 10px;
-  }
-
-  .section-title {
-    font-size: 20px;
-  }
-
-  .card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-
-  .card-text {
-    min-height: auto;
-  }
-
-  .card-image {
-    width: 100%;
-  }
-
-  .footer {
-    padding: 30px 0;
-  }
-
-  .footer-block {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
-  .footer-nav {
-    margin-left: 0;
-    margin-right: 0;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .footer-logo {
-    margin-right: 15px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-
-  .social-links {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-}
-
-@media (max-width: 480px) {
-  .button-text {
-    display: none;
-  }
-
-  .button-icon {
-    margin: 0;
-  }
-
-  .user-name {
-    margin: 10px;
-  }
-
-  .buttons {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-left: auto;
-  }
-
-  .button {
-    min-height: 40px;
-    padding: 5px 12px;
-  }
-
-  .button-out-svg {
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
-    -webkit-mask: url(../img/icon/logout.svg) no-repeat 50% 50%;
-    mask: url(../img/icon/logout.svg) no-repeat 50% 50%;
-    background-repeat: no-repeat;
-    -webkit-mask-size: 20px;
-    mask-size: 20px;
-  }
-
-  .promo {
-    padding: 20px;
-  }
-
-  .section-heading {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .footer-block {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .footer-logo {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    margin-bottom: 20px;
-  }
-
-  .footer-nav {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .footer-link:not(:last-child) {
-    margin-right: 0;
   }
 }
 
@@ -5088,4 +4941,4 @@ section {
   }
 }
 
-._webp .header-wrapper { background-image: url(../img/mfizter.webp); }
+._webp .header-wrapper{ background-image: url(../img/mfizter.webp); }
